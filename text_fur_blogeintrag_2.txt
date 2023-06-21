@@ -1,0 +1,42 @@
+Nach der Auswahl der konkreten Idee innerhalb der ersten Phase der Ideenfindung unseres Projekts, welche letztlich auf die smarte Futterstation fiel, die automatisiert mehrfach am Tag eine bestimmte Menge Futter ausgibt, erstellten wir eine Skizze unserer gesammelten Ideen, um infolgedessen ein Gefühl für das fertige „Produkt“ bekommen zu können. Dabei haben wir noch einmal die Funktionen zusammengefasst und über eventuelle Hardware-Komponenten gesprochen.
+Skizze für die smarte Futterstation
+
+Der Vorratsbehälter besitzt in seinem Deckel einen Ultraschall-Distanz-Sensor. Dieser zeigt an, wie viel Futter noch in dem Speicher vorhanden ist. In dem Fall, dass nur noch geringe Mengen an Futter vorhanden sein sollten, erhält man eine Benachrichtigung, dass möglichst bald aufgefüllt werden sollte.
+
+Auf dem Display wird zusätzlich ebenfalls die Füllmenge angezeigt. Mit drei Buttons wird ein kleines Menü bedient, mit dem man unter anderem das Futter manuell ausgeben kann. Dort kann man auch einstellen, wie viel Futter auf einmal ausgegeben werden soll, indem man den Knopf solange gedrückt hält, bis genügend im Napf ist. Der Futterautomat merkt sich dann die Menge.
+
+Mit dem RFID Scanner wird erkannt, welches Tier gerade zu essen beabsichtigt. Hat die Katze bereits die gewollte Menge an Futter bekommen, soll nichts mehr ausgegeben werden.
+
+Mit der Webanwendung ist es möglich, Uhrzeiten einzutragen, an denen automatisch Futter ausgegeben werden soll.
+
+Hardwareauswahl:
+
+Nach der genaueren Planung der Funktionen haben wir Komponenten für die Projektumsetzung ausgewählt. Diese Liste haben wir unter der Annahme erstellt, dass Komponenten wie Kabel, Widerstände, Platinen-Material schon verfügbar ist.
+Artikel	Begründung	Menge	Preis	Link
+ESP32 NodeMCU	Microcontroller als zentrale Steuerung	1	6,80€	Berrybase
+20×4 LC Display I2C 5V	Display zum anzeigen des Menüs	1	5,95€	Pollin
+HC-SR04 Ultraschall 	Sensor zum bestimmen des Füllstandes	1	1,49€	Berrybase
+Getriebemotor TDY-12, 15U/min 12V	Motor zum Betrieb der Futterschnecke	1	6,99€	Pollin
+Stecker-Schaltnetzteil 12V	Stromversorgung	1	2,95€	Pollin
+Hohlbuchse, 5,5/2,5 mm	Anschluss der Stromversorgung	1	0,35€	Pollin
+Wippenschalter	Schalter für die Stromversorgung	1	0,50€	Pollin
+DC/DC Spannungsregler LM2596	Spannungsreglung von 12V auf 5V	1	4,15€	Reichelt
+Transistor BD911, NPN	Steuerung des Motors	1	0,41€	Pollin
+Drucktaster PBS-12B	Steuerung des Menüs	3	0,70€	Pollin
+RFID RC522	RFID Set zur Identifikation	1	10,40€	Reichelt
+	Gesamtpreis		42,09€	
+
+Zur Umsetzung des Sommerprojekts haben wir uns für die Wasserfall Vorgehensmethode entschieden, welche wir bereits im Wintersemester des Moduls „Softskills“ kennenlernen durften.
+
+Die Wasserfallmethode beschreibt dabei einen Projektmanagementansatz, der in verschiedene Phasen aufgegliedert wird.
+
+    Anforderungen -> Lastenheft
+    Entwurf -> Softwarearchitektur
+    Implementation -> Software
+    Überprüfung
+    Wartung
+
+    (Quelle: Vorlesung 7 Projektarbeit & Dokumentation)
+
+Anhand der verschiedenen Phasen wird das Projekt in chronologischer Reihenfolge umgesetzt. Dabei entsteht am Ende jeder Phase ein fertiges „Dokument“, welches weiterverwendet werden kann, sodass der Fortschritt sequenziell festgehalten wird. Als erstes haben wir ein Lastenheft entworfen, in dem wir die Erwartungen an unser System festgehalten haben. Danach haben wir Hardwarekomponenten ausgewählt, mit denen wir möglichst kosteneffizient die Anforderungen erfüllen können. Die nachfolgenden Phasen der Entwicklung der Futterstation stehen dabei noch aus.
+Wir haben uns für dieses Verfahren entschieden, da wir nach einer einfachen Vorgehensmethode gesucht haben, die uns einen klaren und geordneten Ablauf darstellt, an denen wir uns richten können. Dabei war es uns auch wichtig, flexible Planungsoptionen im Hinblick auf die verschiedenen Projektphasen zu haben, da unsere Gruppenmitglieder unterschiedliche Zeitrestriktionen besitzen.
