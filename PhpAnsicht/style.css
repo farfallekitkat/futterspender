@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    display: flex;
+    height: 100%;
+  }
+
+  #left-div {
+    float:left; 
+    width: 50%;
+    height: 50%;
+  }
+
+  #right-div {
+    float:right; 
+    width: 50%;
+    height: 50%;
+  }
+
+
+  #left-div input, #right-div input {
+    margin-bottom: 10px; 
+    margin-left: 10px;
+  }
+
+
