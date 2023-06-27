@@ -1,0 +1,33 @@
+.container{
+    position: relative;
+    height: 100vh;
+    background-color: #5f4780;
+}
+
+.centered {
+    position: absolute;
+    margin:auto;
+    top: 50%;
+    height: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #302244;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+.oben {
+    height: 50%;
+    text-align: center;
+}
+
+.unten {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    height: 50%;
+
+}
