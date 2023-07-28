@@ -34,14 +34,14 @@ Stepper myStepper(stepsPerRevolution, IN1, IN3, IN2, IN4);
 #define button2 33
 #define button3 27
 
-const char* ssid = "xxx";
-const char* pass = "xxx";
+const char* ssid = "iPhone von Falk mini";
+const char* pass = "hallo1234";
 WiFiClient client;
 
 MySQL_Connection conn(&client);
-IPAddress server_addr(xxx, xxx, xxx, xxx);
-char user[] = "xxx";
-char password[] = "xxx";
+IPAddress server_addr(188, 68, 47, 133);
+char user[] = "k84947_iot";
+char password[] = "Y2!zsu31";
 char query[128];
 int KatzeID;
 String Name;
@@ -118,7 +118,7 @@ void initWiFi()
   Serial.println("\nConnected to network");
 
   lcd.clear();
-  lcd.print("Connected to network");
+  lcd.print("Connected to");
   lcd.setCursor(0, 1);
   lcd.print("network");
   delay(3000);
